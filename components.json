@@ -1,0 +1,15 @@
+{
+  "padding": "./packages/padding/index.js",
+  "margin": "./packages/margin/index.js",
+  "flex-box": "./packages/flex-box/index.js",
+  "title": "./packages/title/index.js",
+  "tag-color": "./packages/tag-color/index.js",
+  "scroll-div": "./packages/scroll-div/index.js",
+  "base-table": "./packages/base-table/index.js",
+  "table-column": "./packages/table-column/index.js",
+  "tooltip": "./packages/tooltip/index.js",
+  "pagination": "./packages/pagination/index.js",
+  "input": "./packages/input/index.js",
+  "dialog": "./packages/dialog/index.js",
+  "dropdown": "./packages/dropdown/index.js"
+}

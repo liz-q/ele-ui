@@ -1,0 +1,12 @@
+@import "mixins/mixins";
+  @import "common/var";
+
+  @include b(dropdown) {
+    @include e(link) {
+      cursor: pointer;
+      color: #409EFF;
+    }
+
+    .ele-icon--right {
+    }
+  }

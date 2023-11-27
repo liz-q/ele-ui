@@ -1,0 +1,8 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(flex-box) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

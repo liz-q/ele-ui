@@ -1,0 +1,25 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(title) {
+  color: $--color-text-primary;
+  font-size: $--font-size-base;
+  font-weight: $--font-weight-primary;
+
+  @include m(large) {
+    font-size: $--font-size-large;
+  }
+
+  @include m(medium) {
+    font-size: $--font-size-medium;
+  }
+
+  @include m(small) {
+    font-size: $--font-size-base;
+  }
+
+  @include m(mini) {
+    font-size: $--font-size-extra-small;
+  }
+
+}

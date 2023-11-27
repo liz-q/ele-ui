@@ -1,0 +1,64 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@mixin genTheme($backgroundColorWeight, $borderColorWeight, $fontColorWeight) {
+  background-color: mix($--tag-info-color, $--color-white, $backgroundColorWeight);
+  border-color: mix($--tag-info-color, $--color-white, $borderColorWeight);
+  color: mix($--tag-info-color, $--color-white, $fontColorWeight);
+
+  @include m(info){
+    background-color: mix($--tag-primary-color, $--color-white, $backgroundColorWeight);
+    border-color: mix($--tag-primary-color, $--color-white, $borderColorWeight);
+    color: mix($--tag-primary-color, $--color-white, $fontColorWeight);
+  }
+
+  @include m(success){
+    background-color: mix($--tag-success-color, $--color-white, $backgroundColorWeight);
+    border-color: mix($--tag-success-color, $--color-white, $borderColorWeight);
+    color: mix($--tag-success-color, $--color-white, $fontColorWeight);
+  }
+
+  @include m(warn){
+    background-color: mix($--tag-warning-color, $--color-white, $backgroundColorWeight);
+    border-color: mix($--tag-warning-color, $--color-white, $borderColorWeight);
+    color: mix($--tag-warning-color, $--color-white, $fontColorWeight);
+  }
+
+  @include m(error){
+    background-color: mix($--tag-danger-color, $--color-white, $backgroundColorWeight);
+    border-color: mix($--tag-danger-color, $--color-white, $borderColorWeight);
+    color: mix($--tag-danger-color, $--color-white, $fontColorWeight);
+  }
+}
+
+@include b(tag-color) {
+  @include genTheme(10%, 20%, 100%);
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  padding: 0 8px;
+  border-radius: $--tag-border-radius;
+  border-width: 1px;
+  border-style: solid;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include m(small) {
+    height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include m(mini) {
+    height: 20px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @include when(bold) {
+    font-weight: bold;
+  }
+}

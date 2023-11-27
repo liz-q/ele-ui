@@ -1,0 +1,92 @@
+{
+  "zh-CN": [
+    {
+      "name": "更新日志",
+      "path": "/changelog"
+    },
+    {
+      "name": "开发指南",
+      "children": [
+        {
+          "path": "/installation",
+          "name": "安装"
+        },
+        {
+          "path": "/quickstart",
+          "name": "快速上手"
+        }
+      ]
+    },
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "二开组件",
+          "list": [
+            {
+              "path": "/base-table",
+              "title": "BaseTable 基础表格"
+            },
+            {
+              "path": "/table-column",
+              "title": "TableColumn 基础列"
+            },
+            {
+              "path": "/tooltip",
+              "title": "Tooltip 图标提示"
+            },
+            {
+              "path": "/pagination",
+              "title": "Pagination 基础分页"
+            },
+            {
+              "path": "/input",
+              "title": "Input 基础input"
+            },
+            {
+              "path": "/dialog",
+              "title": "Dialog 通用弹框"
+            },
+            {
+              "path": "/dropdown",
+              "title": "Dropdown 通用下拉"
+            }
+          ]
+        },
+        {
+          "groupName": "新开组件",
+          "list": [
+            {
+              "path": "/padding",
+              "title": "Padding 内边距容器"
+            },
+            {
+              "path": "/margin",
+              "title": "Margin 外边距容器"
+            },
+            {
+              "path": "/flex-box",
+              "title": "FlexBox 弹性布局"
+            },
+            {
+              "path": "/title",
+              "title": "Title 标题"
+            },
+            {
+              "path": "/scroll-div",
+              "title": "ScrollDiv 滚动容器"
+            },
+            {
+              "path": "/tag-color",
+              "title": "TagColor 颜色标签"
+            }
+          ]
+        },
+        {
+          "groupName": "Others",
+          "list": []
+        }
+      ]
+    }
+  ]
+}
